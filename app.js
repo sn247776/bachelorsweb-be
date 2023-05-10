@@ -3,6 +3,7 @@ import {config} from "dotenv";
 import courseRoutes from "./routes/courseRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import ErrorMiddleware from "./middlewares/Error.js";
+import cookieParser from "cookie-parser";
 
 // Make sure config file on the top before using app
 config({
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true,
 }));
+app.use(cookieParser())
 
 app.use("/api/v1", courseRoutes);
 app.use("/api/v1", userRoutes);
