@@ -1,0 +1,355 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "bachelorsweb",
+    "dateExported": "2023-05-11T16:37:58.443Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Course",
+            "containerId": "",
+            "created": "2023-05-08T09:19:06.177Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1044e214-5bf1-463a-89d9-e8bf386625fe",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-05-08T16:33:37.052Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Profile",
+            "containerId": "",
+            "created": "2023-05-09T13:18:54.414Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bec2251b-4f7a-4d96-ba2a-96d54074f923",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "All Courses",
+            "url": "http://localhost:5000/api/v1/courses",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-08T09:17:35.970Z",
+            "modified": "2023-05-08T09:19:10.632Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d20bbe9e-6b05-4bfe-801a-f4e7ccc191fa",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Create Course",
+            "url": "http://localhost:5000/api/v1/createcourse",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-08T14:04:12.177Z",
+            "modified": "2023-05-11T07:13:35.412Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Hello its me new 45"
+                    },
+                    {
+                        "name": "description",
+                        "value": "HEllo its me sagar nirwal"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Web App Development"
+                    },
+                    {
+                        "name": "createdBy",
+                        "value": "Sagar Nirwal"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "d:\\All Projects\\Front End Projects\\Aay Works\\aayworks-dashboard\\src\\Assets\\Image\\appLogo.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8f4bd01-3115-45bc-a234-bd21386287c5",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "1044e214-5bf1-463a-89d9-e8bf386625fe",
+            "name": "Register",
+            "url": "http://localhost:5000/api/v1/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-08T16:33:57.419Z",
+            "modified": "2023-05-09T06:24:31.056Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Sagar Nirwal\",\n  \"email\":\"sn247776@gmail.com\",\n  \"password\":\"sagar247776\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "393aa863-b908-46ef-b9ab-7b9e54d354c5",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "1044e214-5bf1-463a-89d9-e8bf386625fe",
+            "name": "Login",
+            "url": "http://localhost:5000/api/v1/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-09T06:08:34.723Z",
+            "modified": "2023-05-09T06:33:30.677Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Sagar Nirwal\",\n  \"email\":\"sn247776@gmail.com\",\n  \"password\":\"sagar247776\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "24830162-dc2f-4910-a872-b59daad538cc",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "1044e214-5bf1-463a-89d9-e8bf386625fe",
+            "name": "Logout",
+            "url": "http://localhost:5000/api/v1/logout",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-05-09T06:42:19.463Z",
+            "modified": "2023-05-09T06:42:34.147Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9d9772f8-5a5b-41b4-87ba-815fccfdacc5",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "User Profile",
+            "url": "http://localhost:5000/api/v1/me",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-09T13:19:12.262Z",
+            "modified": "2023-05-09T13:19:34.113Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "937c3cc6-2c9a-440f-bb1b-cdfda360b787",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Change Password",
+            "url": "http://localhost:5000/api/v1/changepassword",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-05-10T08:35:10.938Z",
+            "modified": "2023-05-10T08:37:49.547Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\":\"sagar24777\",\n  \"newPassword\":\"sagar247776\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d27ec31-db87-4a2a-b2f4-cce433edaae2",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Change Profile",
+            "url": "http://localhost:5000/api/v1/updateprofile",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-05-10T08:38:40.065Z",
+            "modified": "2023-05-10T08:40:50.969Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Sagar Nirwal\",\n  \"email\": \"sn247776@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3695e1d3-5bb7-4a36-8928-1bc1b99b7fcc",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "ForgotPassword",
+            "url": "http://localhost:5000/api/v1/forgetpassword",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-05-10T09:20:24.333Z",
+            "modified": "2023-05-10T09:45:17.203Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sn247776@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad9c543c-050d-4475-b4d7-07e44ac05b8f",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Reset Password",
+            "url": "http://localhost:5000/api/v1/resetpassword/de4c104f9eb0d2c932fd2abdf8e7e5913cbadc62",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-05-10T09:41:47.881Z",
+            "modified": "2023-05-10T09:45:22.370Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"sagar247776\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e10d491-fef8-4c27-bcd7-8138518bbfde",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Add to Playlist",
+            "url": "http://localhost:5000/api/v1/addtoplaylist",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-05-10T10:48:20.035Z",
+            "modified": "2023-05-10T10:49:45.238Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"6459045906e02b8410b92177\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce8cfadc-4448-434b-a05f-185fc74c9b20",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Remove From Playlist",
+            "url": "http://localhost:5000/api/v1/removefromplaylist?id=6459045906e02b8410b92177",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2023-05-10T13:02:18.700Z",
+            "modified": "2023-05-10T13:10:03.450Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "6459045906e02b8410b92177",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6b53a6eb-24f0-475a-bc0c-304fad9886a0",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Course Lecture",
+            "url": "http://localhost:5000/api/v1/course/645d091161848ce708136783",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-05-11T03:48:07.373Z",
+            "modified": "2023-05-11T15:29:36.519Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c5940c0-cfc8-4569-8083-0ff3d4df986e",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Add Leacture",
+            "url": "http://localhost:5000/api/v1/course/645d091161848ce708136783",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-05-11T07:41:23.997Z",
+            "modified": "2023-05-11T15:26:54.308Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "leacture add"
+                    },
+                    {
+                        "name": "description",
+                        "value": "ha hahhahahhaha hoodf     dfodsafdsljfdsl;f"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\sn247\\Downloads\\yt1s.com - 32 Course Lecture Controller MERN STACK COURSE_v144P.mp4"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "99ecf6de-8d2f-46ca-b0e3-a3fac05679ee",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Delete Cource",
+            "url": "http://localhost:5000/api/v1/course/645ca7b5052beda6128f7d45",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2023-05-11T08:11:20.801Z",
+            "modified": "2023-05-11T08:31:30.771Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cc9ac41e-e756-4e56-b9ec-f97bf433fff5",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "95e6c72c-11cc-4c7f-9e10-b30fe77240cd",
+            "name": "Delete Lecture",
+            "url": "http://localhost:5000/api/v1/lecture-delete?courseId=645d091161848ce708136783&lectureId=645d093e61848ce70813678c",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-05-11T15:27:00.062Z",
+            "modified": "2023-05-11T15:31:48.355Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "courseId",
+                    "value": "645d091161848ce708136783",
+                    "isPath": false
+                },
+                {
+                    "name": "lectureId",
+                    "value": "645d093e61848ce70813678c",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
