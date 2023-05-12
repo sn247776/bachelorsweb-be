@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "bachelorsweb",
-    "dateExported": "2023-05-11T16:37:58.443Z",
+    "dateExported": "2023-05-12T11:45:29.362Z",
     "version": "1.1",
     "folders": [
         {
@@ -24,6 +24,20 @@
             "containerId": "",
             "created": "2023-05-09T13:18:54.414Z",
             "sortNum": 30000
+        },
+        {
+            "_id": "49ecc484-b0f0-4390-9542-4933f1d92cda",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2023-05-12T06:22:02.908Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "8f32b85f-7337-4640-88e1-1fdab31b31f5",
+            "name": "Payment",
+            "containerId": "",
+            "created": "2023-05-12T11:42:15.840Z",
+            "sortNum": 50000
         }
     ],
     "requests": [
@@ -92,13 +106,32 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-05-08T16:33:57.419Z",
-            "modified": "2023-05-09T06:24:31.056Z",
+            "modified": "2023-05-12T04:15:59.702Z",
             "headers": [],
             "params": [],
             "body": {
-                "type": "json",
-                "raw": "{\n  \"name\":\"Sagar Nirwal\",\n  \"email\":\"sn247776@gmail.com\",\n  \"password\":\"sagar247776\"\n}",
-                "form": []
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "New User"
+                    },
+                    {
+                        "name": "email",
+                        "value": "user452@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "45217888dsa"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\sn247\\Downloads\\OIP.jfif"
+                    }
+                ]
             },
             "tests": []
         },
@@ -145,6 +178,20 @@
             "sortNum": 80000,
             "created": "2023-05-09T13:19:12.262Z",
             "modified": "2023-05-09T13:19:34.113Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dc51f786-ccb3-4f25-ab93-f61133c18bf2",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Delete User",
+            "url": "http://localhost:5000/api/v1/me",
+            "method": "DELETE",
+            "sortNum": 85000,
+            "created": "2023-05-12T06:47:42.370Z",
+            "modified": "2023-05-12T06:48:04.144Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -349,6 +396,87 @@
                     "isPath": false
                 }
             ],
+            "tests": []
+        },
+        {
+            "_id": "a22bf4d2-723c-413d-890c-4b02fadeb77e",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "5eb0577b-6875-4ddb-a6ee-c18c123c336f",
+            "name": "Update Profile Picture",
+            "url": "http://localhost:5000/api/v1/updateprofilepic",
+            "method": "PUT",
+            "sortNum": 200000,
+            "created": "2023-05-12T06:11:28.069Z",
+            "modified": "2023-05-12T06:15:04.248Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\sn247\\Downloads\\website-img.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9afc328-b9d8-43cc-b209-a83c967b746a",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "49ecc484-b0f0-4390-9542-4933f1d92cda",
+            "name": "Get All Users",
+            "url": "http://localhost:5000/api/v1/admin/users",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2023-05-12T06:23:02.049Z",
+            "modified": "2023-05-12T06:23:29.782Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8158b45-d040-4b64-8d25-c658a4383ad1",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "49ecc484-b0f0-4390-9542-4933f1d92cda",
+            "name": "Change User Role",
+            "url": "http://localhost:5000/api/v1/admin/user/6459e71e9587a629c90fb5a2",
+            "method": "PUT",
+            "sortNum": 230000,
+            "created": "2023-05-12T06:26:03.922Z",
+            "modified": "2023-05-12T11:37:06.164Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "98b0e3b0-cede-40ac-a39d-31190d100ac3",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "49ecc484-b0f0-4390-9542-4933f1d92cda",
+            "name": "Delete User",
+            "url": "http://localhost:5000/api/v1/admin/user/6459e6de9587a629c90fb59e",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2023-05-12T06:39:54.295Z",
+            "modified": "2023-05-12T06:40:00.945Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cbb98144-9ccd-4dbd-b344-fb7b69b0a477",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "8f32b85f-7337-4640-88e1-1fdab31b31f5",
+            "name": "Subscribe",
+            "url": "http://localhost:5000/api/v1/subscribe",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-05-12T11:42:32.184Z",
+            "modified": "2023-05-12T11:42:38.020Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]

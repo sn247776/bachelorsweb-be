@@ -2,6 +2,7 @@ import express from "express";
 import {config} from "dotenv";
 import courseRoutes from "./routes/courseRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
+import paumentRoutes from "./routes/paymentRoutes.js"
 import ErrorMiddleware from "./middlewares/Error.js";
 import cookieParser from "cookie-parser";
 
@@ -20,7 +21,7 @@ app.use(cookieParser())
 
 app.use("/api/v1", courseRoutes);
 app.use("/api/v1", userRoutes);
-
+app.use("/api/v1", paumentRoutes);
 export default app;
 
 
