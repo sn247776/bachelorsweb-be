@@ -5,6 +5,7 @@ import userRoutes from "./routes/userRoutes.js"
 import paumentRoutes from "./routes/paymentRoutes.js"
 import ErrorMiddleware from "./middlewares/Error.js";
 import cookieParser from "cookie-parser";
+import otherRoutes from "./routes/otherRoutes.js";
 
 // Make sure config file on the top before using app
 config({
@@ -22,6 +23,8 @@ app.use(cookieParser())
 app.use("/api/v1", courseRoutes);
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", paumentRoutes);
+app.use("/api/v1", otherRoutes);
+
 export default app;
 
 

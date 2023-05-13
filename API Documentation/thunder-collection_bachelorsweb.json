@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "bachelorsweb",
-    "dateExported": "2023-05-12T11:45:29.362Z",
+    "dateExported": "2023-05-13T03:02:19.734Z",
     "version": "1.1",
     "folders": [
         {
@@ -38,6 +38,13 @@
             "containerId": "",
             "created": "2023-05-12T11:42:15.840Z",
             "sortNum": 50000
+        },
+        {
+            "_id": "9ef8bce2-0adc-4a6c-97dc-09f92cd07808",
+            "name": "Other",
+            "containerId": "",
+            "created": "2023-05-13T02:58:38.828Z",
+            "sortNum": 60000
         }
     ],
     "requests": [
@@ -477,6 +484,72 @@
             "modified": "2023-05-12T11:42:38.020Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6f030fd9-3afb-4c16-b507-a574e14babe4",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "8f32b85f-7337-4640-88e1-1fdab31b31f5",
+            "name": "Razor Pay Key",
+            "url": "http://localhost:5000/api/v1/razorpaykey",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2023-05-12T13:29:48.014Z",
+            "modified": "2023-05-12T13:29:51.996Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cb3f8a54-30ec-4821-94dc-b13a9aa3aadd",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "8f32b85f-7337-4640-88e1-1fdab31b31f5",
+            "name": "Cancel Subscription",
+            "url": "http://localhost:5000/api/v1/subscribe/cancel",
+            "method": "DELETE",
+            "sortNum": 270000,
+            "created": "2023-05-13T02:16:30.945Z",
+            "modified": "2023-05-13T02:17:36.485Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3cec1b2c-e3e7-4ccd-ba9f-98ec2b45bb37",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "9ef8bce2-0adc-4a6c-97dc-09f92cd07808",
+            "name": "Contact Us",
+            "url": "http://localhost:5000/api/v1/contact",
+            "method": "POST",
+            "sortNum": 280000,
+            "created": "2023-05-13T02:58:53.722Z",
+            "modified": "2023-05-13T03:00:42.143Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Sagar\",\n  \"email\":\"sn24@gmail.com\",\n  \"message\":\"Bla Bla\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b4200e1-03c0-414c-bc32-3a01ff5afef3",
+            "colId": "5806b288-10b4-4d82-981e-9598046d0f72",
+            "containerId": "9ef8bce2-0adc-4a6c-97dc-09f92cd07808",
+            "name": "Course Request",
+            "url": "http://localhost:5000/api/v1/courserequest",
+            "method": "POST",
+            "sortNum": 290000,
+            "created": "2023-05-13T03:01:30.659Z",
+            "modified": "2023-05-13T03:02:05.285Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Sagar\",\n  \"email\":\"sn24@gmail.com\",\n  \"course\":\"Bla Bla\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
