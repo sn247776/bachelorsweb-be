@@ -24,7 +24,7 @@ app.use(express.urlencoded({
 app.use(cookieParser())
 app.use(
     cors({
-      origin: process.env.FE_URL,
+      origin: [process.env.FE_URL,"http://localhost:3001" ],
       credentials: true,
       methods: ["GET", "POST", "PUT", "DELETE"],
     })
