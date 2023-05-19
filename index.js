@@ -26,6 +26,13 @@ nodeCron.schedule("0 0 0 5 * *", async () => {
   }
 });
 
+// very important to run it when we run the server 1st time other wise we face lots of problumes
+
+// const temp = async()=>{
+//   await Stats.create({});
+// }
+
+// temp();
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is Running on port: ${process.env.PORT}`);
