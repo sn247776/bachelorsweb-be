@@ -5,7 +5,7 @@ import {
   getDashboardStats,
 } from "../controllers/otherController.js";
 
-import { authorizeAdmin, isAuthenticated } from "../middlewares/Auth.js";
+import { authorizeAdmin, isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
 
