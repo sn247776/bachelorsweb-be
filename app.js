@@ -24,7 +24,7 @@ app.use(express.urlencoded({
 app.use(cookieParser())
 app.use(
     cors({
-      origin: [process.env.FE_URL,"http://localhost:3000" ],
+      origin: [process.env.FE_URL,"http://localhost:3000","https://core-ui-tawny.vercel.app" ],
       credentials: true,
       methods: ["GET", "POST", "PUT", "DELETE"],
     })
